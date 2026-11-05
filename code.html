@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Storefront</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Simple Storefront</h1>
+    <button id="view-cart" class="btn">Cart (<span id="cart-count">0</span>)</button>
+  </header>
+
+  <main class="layout">
+    <section class="products" id="products"></section>
+
+    <aside class="cart" id="cart">
+      <div class="cart-header">
+        <h2>Your Cart</h2>
+        <button id="close-cart" class="btn btn-ghost">Close</button>
+      </div>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="row">
+          <strong>Total</strong>
+          <strong id="cart-total">$0.00</strong>
+        </div>
+        <button id="clear-cart" class="btn btn-ghost">Clear</button>
+      </div>
+    </aside>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
